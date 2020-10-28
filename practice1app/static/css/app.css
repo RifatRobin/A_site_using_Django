@@ -1,0 +1,27 @@
+.fullwidth{
+  width:80%;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.darkhead{
+  background-color: black;
+  color: white;
+}
+.button{
+	position: absolute;
+	top: 57%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.btn{
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    transition: 0.8s ease;
+}
+.btn:hover{
+   background-color: white;
+	color: black;
+}

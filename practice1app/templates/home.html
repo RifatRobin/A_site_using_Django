@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Welcome</title>
+	<link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+</head>
+<style type="text/css">
+	.logo img {
+		float: left;
+		width: 150px;
+		height: 100px;
+	}
+</style>
+
+<body>
+	<header>
+		<div class="main">
+			<div class="logo">
+				<img src="{% static 'image/logo.jpg' %}">
+			</div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="http://127.0.0.1:8000/reg">Register</a></li>
+				<li><a href="http://127.0.0.1:8000/login">Login</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</div>
+		<div class="title">
+			<h1>TRAVEL THE WORLD</h1>
+		</div>
+		<div class="button">
+			<a href="#" target="_blank" class="btn">Explore</a>
+			<a href="#" target="_blank" class="btn">Watch Video</a>
+			<a href="http://127.0.0.1:8000/login" class="btn">Login</a>
+		</div>
+	</header>
+
+</body>
+
+</html>

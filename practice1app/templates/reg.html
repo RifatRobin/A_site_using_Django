@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>register page</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/reg.css' %}">
+</head>
+
+<body>
+	<header>
+		<div class="box">
+			<h1>Register</h1>
+			<form class="" action="/reg" method="POST">
+				{% csrf_token %}
+				<div class="inputBox">
+					<input type="text" name="username" required="">
+					<label>User Name</label>
+
+				</div>
+				<div class="inputBox">
+					<input type="email" name="email" required="">
+					<label>Email</label>
+
+				</div>
+				<div class="inputBox">
+					<input type="text" name="phone" required="">
+					<label>Phone Number</label>
+
+				</div>
+				<div class="inputBox">
+					<input type="password" name="passwd" required="">
+					<label>Password</label>
+
+				</div>
+
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+		<div class="button1">
+			<a href="http://127.0.0.1:8000/home" class="btn1">Home</a>
+		</div>
+		<div class="button2">
+			<a href="http://127.0.0.1:8000/login" class="btn2">Login</a>
+		</div>
+	</header>
+</body>
+
+</html>
