@@ -19,8 +19,8 @@ from practice1app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home', views.home,name=""),
-    path('login',views.login,name=""),
-    path('reg',views.reg,name=""),
-    path('index/',views.index,name="index"),
+    path('', views.home, name="home"),
+    path('login', views.login, name="login"),
+    path('reg', views.reg, name="reg"),
+    path('index/', views.index, name="index"),
 ]
